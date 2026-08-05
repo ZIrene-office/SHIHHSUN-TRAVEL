@@ -1,20 +1,7 @@
-```css
-/* =================================
-   世勳旅行社 SHIH HSUN TRAVEL
-   Professional Travel Website CSS
-================================= */
-
-
-/* 基本設定 */
-
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
 }
 
 
@@ -23,59 +10,34 @@ body {
     font-family:
     "Noto Sans TC",
     "Microsoft JhengHei",
-    Arial,
     sans-serif;
 
-    color:#333;
+    color: #333;
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    background:#fff;
-
-}
-
-
-
-a {
-
-    text-decoration:none;
-
-    color:inherit;
-
-}
-
-
-
-img {
-
-    max-width:100%;
-
-    display:block;
+    background: #faf8f3;
 
 }
 
 
 
 
-
-/* =========================
-   Header 導覽列
-========================= */
-
+/* 導覽列 */
 
 header {
 
-    display:flex;
+    display: flex;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
-    align-items:center;
+    align-items: center;
 
-    padding:20px 8%;
+    padding: 20px 8%;
 
-    background:#0b2d4d;
+    background: white;
 
-    color:white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 
 }
 
@@ -83,35 +45,35 @@ header {
 
 .logo h1 {
 
-    font-size:28px;
+    font-size: 28px;
 
-    letter-spacing:3px;
+    color: #315c45;
 
 }
-
 
 
 .logo p {
 
-    font-size:12px;
+    font-size: 14px;
 
-    letter-spacing:2px;
+    letter-spacing: 3px;
 
-    opacity:.8;
+    color: #777;
 
 }
+
 
 
 
 nav a {
 
-    margin-left:25px;
+    text-decoration: none;
 
-    color:white;
+    color: #333;
 
-    font-size:16px;
+    margin-left: 25px;
 
-    transition:.3s;
+    font-weight: bold;
 
 }
 
@@ -119,59 +81,38 @@ nav a {
 
 nav a:hover {
 
-    color:#d9b36c;
+    color: #b88a44;
 
 }
 
 
 
 
-
-/* =========================
-   首頁 Banner
-========================= */
-
+/* 首頁大區 */
 
 .banner {
 
-
-    height:520px;
-
-
-    background:
-
-
-    linear-gradient(
-
-    rgba(0,0,0,.35),
-
-    rgba(0,0,0,.35)
-
-    ),
-
-
-    url("../images/banner.jpg");
-
-
-
-    background-size:cover;
-
-
-    background-position:center;
-
-
+    height: 600px;
 
     display:flex;
 
-
     align-items:center;
-
 
     padding-left:10%;
 
 
-    color:white;
+    background:
 
+    linear-gradient(
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)
+    ),
+
+    linear-gradient(
+    120deg,
+    #6c8b73,
+    #d8c39b
+    );
 
 }
 
@@ -180,9 +121,9 @@ nav a:hover {
 
 .banner-text {
 
+    color:white;
 
-    max-width:550px;
-
+    max-width:600px;
 
 }
 
@@ -190,15 +131,9 @@ nav a:hover {
 
 .banner h2 {
 
-
-    font-size:48px;
-
+    font-size:50px;
 
     line-height:1.4;
-
-
-    margin-bottom:20px;
-
 
 }
 
@@ -206,121 +141,28 @@ nav a:hover {
 
 .banner p {
 
+    margin:25px 0;
 
     font-size:18px;
 
-
-    margin-bottom:30px;
-
-
 }
 
 
-
-
-
-
-
-/* =========================
-   內頁 Banner
-   出團情報
-========================= */
-
-
-.tour-banner {
-
-
-    height:300px;
-
-
-    background:
-
-
-    linear-gradient(
-
-    rgba(0,0,0,.45),
-
-    rgba(0,0,0,.45)
-
-    ),
-
-
-    url("../images/tour-banner.jpg");
-
-
-
-    background-size:cover;
-
-
-    background-position:center;
-
-
-
-    display:flex;
-
-
-    flex-direction:column;
-
-
-    justify-content:center;
-
-
-    align-items:center;
-
-
-
-    color:white;
-
-
-    text-align:center;
-
-
-}
-
-
-
-.tour-banner h2 {
-
-
-    font-size:42px;
-
-
-    margin-bottom:10px;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   按鈕
-========================= */
 
 
 .button {
 
-
     display:inline-block;
 
-
-    padding:12px 30px;
-
-
-    background:#c99a4b;
-
+    background:#b88a44;
 
     color:white;
 
+    padding:12px 30px;
 
-    border-radius:5px;
+    border-radius:30px;
 
-
-    transition:.3s;
-
+    text-decoration:none;
 
 }
 
@@ -328,28 +170,17 @@ nav a:hover {
 
 .button:hover {
 
-
-    background:#a8782e;
-
+    background:#8f682f;
 
 }
 
 
 
-
-
-
-
-/* =========================
-   區塊設定
-========================= */
-
+/* 區塊 */
 
 section {
 
-
     padding:70px 8%;
-
 
 }
 
@@ -357,132 +188,77 @@ section {
 
 section h2 {
 
-
     text-align:center;
-
 
     font-size:32px;
 
-
-    color:#0b2d4d;
-
-
     margin-bottom:40px;
 
+    color:#315c45;
 
 }
 
 
 
-
-
-
-
-/* =========================
-   行程卡片
-========================= */
+/* 行程卡片 */
 
 
 .cards {
 
-
     display:flex;
-
 
     gap:30px;
 
-
     justify-content:center;
 
-
-    flex-wrap:wrap;
-
-
 }
-
 
 
 .card {
 
-
-    width:31%;
-
-
-    min-width:280px;
-
-
     background:white;
 
+    width:300px;
 
-    border-radius:10px;
+    padding:25px;
 
-
-    overflow:hidden;
-
-
+    border-radius:15px;
 
     box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
 
-
-    0 5px 20px rgba(0,0,0,.12);
-
-
-
-    transition:.3s;
-
+    text-align:center;
 
 }
 
 
 
-.card:hover {
+.card-image {
 
+    height:150px;
 
-    transform:translateY(-5px);
+    display:flex;
 
+    align-items:center;
 
-}
+    justify-content:center;
 
+    font-size:70px;
 
+    background:#f2eadb;
 
+    border-radius:12px;
 
-.card img {
-
-
-    width:100%;
-
-
-    height:220px;
-
-
-    object-fit:cover;
-
+    margin-bottom:20px;
 
 }
-
 
 
 .card h3 {
 
+    color:#315c45;
 
-    padding:20px 20px 10px;
-
-
-    color:#0b2d4d;
-
-
-    font-size:21px;
-
-
-}
-
-
-
-.card p {
-
-
-    padding:0 20px 20px;
-
+    margin-bottom:15px;
 
 }
 
@@ -490,53 +266,26 @@ section h2 {
 
 .card a {
 
+    color:#b88a44;
 
-    display:block;
-
-
-    margin:0 20px 25px;
-
-
-    color:#c08b3d;
-
+    text-decoration:none;
 
     font-weight:bold;
 
-
 }
 
 
 
-
-
-
-
-/* =========================
-   最新消息
-========================= */
-
-
-.news {
-
-
-    background:#f5f7f9;
-
-
-}
-
+/* 最新消息 */
 
 
 .news ul {
 
-
     max-width:700px;
-
 
     margin:auto;
 
-
     list-style:none;
-
 
 }
 
@@ -544,88 +293,57 @@ section h2 {
 
 .news li {
 
+    background:white;
 
-    padding:15px;
+    margin:15px 0;
 
+    padding:15px 25px;
 
-    border-bottom:1px solid #ddd;
-
+    border-radius:10px;
 
 }
 
 
 
-
-
-
-
-/* =========================
-   公司特色
-========================= */
-
+/* 特色 */
 
 .features {
 
-
     display:flex;
-
 
     justify-content:center;
 
-
     gap:40px;
 
-
 }
-
 
 
 .features div {
 
+    background:white;
 
-    width:30%;
+    padding:30px;
 
+    width:280px;
 
     text-align:center;
 
-
-}
-
-
-
-.features h3 {
-
-
-    color:#c08b3d;
-
-
-    margin-bottom:15px;
-
+    border-radius:15px;
 
 }
 
 
 
 
-
-
-
-/* =========================
-   聯絡區
-========================= */
-
+/* 聯絡區 */
 
 .contact-box {
 
-
-    background:#0b2d4d;
-
-
-    color:white;
-
-
     text-align:center;
 
+    background:#315c45;
+
+    color:white;
 
 }
 
@@ -633,70 +351,37 @@ section h2 {
 
 .contact-box h2 {
 
-
     color:white;
 
-
 }
 
 
 
-.contact-box p {
-
-
-    margin:10px;
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   Footer
-========================= */
-
+/* footer */
 
 footer {
 
-
-    background:#061c30;
-
+    background:#222;
 
     color:white;
 
-
     text-align:center;
 
-
     padding:20px;
-
 
 }
 
 
 
 
-
-
-
-/* =========================
-   手機版 RWD
-========================= */
-
+/* 手機版 */
 
 @media(max-width:768px){
 
 
-
 header {
 
-
     flex-direction:column;
-
 
 }
 
@@ -704,102 +389,39 @@ header {
 
 nav {
 
-
     margin-top:15px;
 
-
 }
-
-
-
-nav a {
-
-
-    margin:0 8px;
-
-
-    font-size:14px;
-
-
-}
-
 
 
 
 .banner {
 
-
-    height:420px;
-
+    height:500px;
 
     padding:30px;
 
-
 }
-
 
 
 
 .banner h2 {
 
-
-    font-size:34px;
-
+    font-size:36px;
 
 }
 
 
 
-.tour-banner h2 {
-
-
-    font-size:32px;
-
-
-}
-
-
-
-
-.cards {
-
-
-    flex-direction:column;
-
-
-}
-
-
-
-.card {
-
-
-    width:100%;
-
-
-}
-
-
-
-
+.cards,
 .features {
 
-
     flex-direction:column;
 
+    align-items:center;
 
 }
 
 
 
-.features div {
-
-
-    width:100%;
-
-
 }
-
-
-}
-```
