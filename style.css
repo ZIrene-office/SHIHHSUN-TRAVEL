@@ -43,22 +43,13 @@ header {
 
 
 
-.logo h1 {
+.logo img {
 
-    font-size: 28px;
+    width: 180px;
 
-    color: #315c45;
+    height: auto;
 
-}
-
-
-.logo p {
-
-    font-size: 14px;
-
-    letter-spacing: 3px;
-
-    color: #777;
+    display: block;
 
 }
 
