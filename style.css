@@ -1,7 +1,13 @@
+/* ===== 基本設定 ===== */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
 }
 
 
@@ -12,32 +18,42 @@ body {
     "Microsoft JhengHei",
     sans-serif;
 
-    color: #333;
+    color:#333;
 
-    line-height: 1.8;
+    line-height:1.8;
 
-    background: #faf8f3;
+    background:#f7f9fb;
 
 }
 
 
 
+img {
 
-/* 導覽列 */
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+/* ===== Header ===== */
+
 
 header {
 
-    display: flex;
+    display:flex;
 
-    justify-content: space-between;
+    justify-content:space-between;
 
-    align-items: center;
+    align-items:center;
 
-    padding: 20px 8%;
+    padding:20px 8%;
 
-    background: white;
+    background:white;
 
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow:0 3px 15px rgba(0,0,0,0.08);
 
 }
 
@@ -45,11 +61,9 @@ header {
 
 .logo img {
 
-    width: 180px;
+    width:180px;
 
-    height: auto;
-
-    display: block;
+    height:auto;
 
 }
 
@@ -58,13 +72,15 @@ header {
 
 nav a {
 
-    text-decoration: none;
+    text-decoration:none;
 
-    color: #333;
+    color:#0b3a5b;
 
-    margin-left: 25px;
+    margin-left:30px;
 
-    font-weight: bold;
+    font-weight:bold;
+
+    transition:0.3s;
 
 }
 
@@ -72,41 +88,39 @@ nav a {
 
 nav a:hover {
 
-    color: #b88a44;
+    color:#d6a85f;
 
 }
 
 
 
 
-/* 首頁大區 */
+
+/* ===== 首頁大圖 ===== */
+
 
 .banner {
 
-    height: 600px;
+    height:520px;
+
+    background:
+
+    linear-gradient(
+    rgba(11,58,91,0.55),
+    rgba(11,58,91,0.55)
+    ),
+
+    url("images/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
 
     display:flex;
 
     align-items:center;
 
-    padding-left:10%;
-
-
-    background:
-
-    linear-gradient(
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.35)
-    ),
-
-    linear-gradient(
-    120deg,
-    #6c8b73,
-    #d8c39b
-    );
-
 }
-
 
 
 
@@ -114,23 +128,25 @@ nav a:hover {
 
     color:white;
 
-    max-width:600px;
+    margin-left:10%;
+
+    max-width:550px;
 
 }
 
 
 
-.banner h2 {
+.banner-text h2 {
 
-    font-size:50px;
+    font-size:48px;
 
-    line-height:1.4;
+    line-height:1.3;
 
 }
 
 
 
-.banner p {
+.banner-text p {
 
     margin:25px 0;
 
@@ -141,11 +157,14 @@ nav a:hover {
 
 
 
+/* ===== 按鈕 ===== */
+
+
 .button {
 
     display:inline-block;
 
-    background:#b88a44;
+    background:#d6a85f;
 
     color:white;
 
@@ -155,19 +174,24 @@ nav a:hover {
 
     text-decoration:none;
 
+    transition:.3s;
+
 }
 
 
 
 .button:hover {
 
-    background:#8f682f;
+    background:#b8873f;
 
 }
 
 
 
-/* 區塊 */
+
+
+/* ===== 區塊 ===== */
+
 
 section {
 
@@ -181,17 +205,19 @@ section h2 {
 
     text-align:center;
 
+    color:#0b3a5b;
+
     font-size:32px;
 
     margin-bottom:40px;
-
-    color:#315c45;
 
 }
 
 
 
-/* 行程卡片 */
+
+
+/* ===== 行程卡片 ===== */
 
 
 .cards {
@@ -205,51 +231,58 @@ section h2 {
 }
 
 
+
 .card {
 
     background:white;
 
-    width:300px;
-
-    padding:25px;
+    width:32%;
 
     border-radius:15px;
 
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.08);
+    overflow:hidden;
 
-    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-8px);
 
 }
 
 
 
-.card-image {
+.card img {
 
-    height:150px;
+    width:100%;
 
-    display:flex;
+    height:220px;
 
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:70px;
-
-    background:#f2eadb;
-
-    border-radius:12px;
-
-    margin-bottom:20px;
+    object-fit:cover;
 
 }
+
 
 
 .card h3 {
 
-    color:#315c45;
+    color:#0b3a5b;
 
-    margin-bottom:15px;
+    padding:20px 20px 10px;
+
+}
+
+
+
+.card p {
+
+    padding:0 20px 20px;
 
 }
 
@@ -257,7 +290,11 @@ section h2 {
 
 .card a {
 
-    color:#b88a44;
+    display:block;
+
+    margin:0 20px 25px;
+
+    color:#1d5d8f;
 
     text-decoration:none;
 
@@ -267,7 +304,17 @@ section h2 {
 
 
 
-/* 最新消息 */
+
+
+/* ===== 最新消息 ===== */
+
+
+.news {
+
+    background:white;
+
+}
+
 
 
 .news ul {
@@ -276,27 +323,30 @@ section h2 {
 
     margin:auto;
 
-    list-style:none;
-
 }
 
 
 
 .news li {
 
-    background:white;
+    list-style:none;
 
-    margin:15px 0;
+    background:#f1f6fa;
 
-    padding:15px 25px;
+    padding:15px;
 
-    border-radius:10px;
+    margin:12px 0;
+
+    border-left:5px solid #1d5d8f;
 
 }
 
 
 
-/* 特色 */
+
+
+/* ===== 特色 ===== */
+
 
 .features {
 
@@ -304,9 +354,10 @@ section h2 {
 
     justify-content:center;
 
-    gap:40px;
+    gap:30px;
 
 }
+
 
 
 .features div {
@@ -315,24 +366,26 @@ section h2 {
 
     padding:30px;
 
-    width:280px;
+    border-radius:15px;
 
     text-align:center;
 
-    border-radius:15px;
+    width:30%;
 
 }
 
 
 
 
-/* 聯絡區 */
+
+/* ===== 聯絡區 ===== */
+
 
 .contact-box {
 
     text-align:center;
 
-    background:#315c45;
+    background:#0b3a5b;
 
     color:white;
 
@@ -348,24 +401,37 @@ section h2 {
 
 
 
-/* footer */
-
-footer {
-
-    background:#222;
+.contact-box a {
 
     color:white;
-
-    text-align:center;
-
-    padding:20px;
 
 }
 
 
 
 
-/* 手機版 */
+
+/* ===== Footer ===== */
+
+
+footer {
+
+    background:#06283d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+
+/* ===== 手機版 ===== */
+
 
 @media(max-width:768px){
 
@@ -380,7 +446,15 @@ header {
 
 nav {
 
-    margin-top:15px;
+    margin-top:20px;
+
+}
+
+
+
+nav a {
+
+    margin:0 10px;
 
 }
 
@@ -388,15 +462,13 @@ nav {
 
 .banner {
 
-    height:500px;
-
-    padding:30px;
+    height:420px;
 
 }
 
 
 
-.banner h2 {
+.banner-text h2 {
 
     font-size:36px;
 
@@ -404,26 +476,35 @@ nav {
 
 
 
-.cards,
+.cards {
+
+    flex-direction:column;
+
+}
+
+
+
+.card {
+
+    width:100%;
+
+}
+
+
+
 .features {
 
     flex-direction:column;
 
-    align-items:center;
-
 }
 
 
 
+.features div {
+
+    width:100%;
+
 }
-.card-image img {
 
-width:100%;
-
-height:150px;
-
-object-fit:cover;
-
-border-radius:12px;
 
 }
