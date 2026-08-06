@@ -66,7 +66,37 @@ header {
     height:auto;
 
 }
+.logo {
 
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.logo-text h1 {
+
+    color:#0b3a5b;
+
+    font-size:28px;
+
+    margin:0;
+
+}
+
+
+.logo-text p {
+
+    color:#777;
+
+    font-size:14px;
+
+    margin:0;
+
+}
 
 
 
